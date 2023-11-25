@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Arboles RAVL</title>
+    <link rel="icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/joint.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+
+<div id="controls">
+
+    <div id="common" class="box">
+        <div class="type">
+            Tipo:
+            <select name="type">
+                <option value="2">Árbol AVL (AVL Tree)</option>
+                <option value="1">Árbol RAVL (Relaxed AVL Tree)</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="bst control box" id="avl">
+        <h2>Árbol AVL (AVL Tree)</h2>
+        <div class="content"></div>
+    </div>
+
+    <div class="bst control box" id="ravl" style="display: none">
+        <h2>Árbol RAVL (Relaxed AVL Tree)</h2>
+        <div class="content"></div>
+    </div>
+</div>
+
+<div id="ad">Herramienta Visual del Grupo 1: Arboles RAVL</a></div>
+
+<div id="modules" style="display: none;">
+    <div class="paper"></div>
+
+    <div class="orders">
+        <div>
+            Todos los nodos [ <span class="node-count">0</span> ]:
+            <select name="orders">
+                <option value="2">Recorrido en Inorden (Inorder)</option>
+                <option value="0">Recorrido por Niveles (Level Order)</option>
+                <option value="1">Recorrido en Preorden (Preorder)</option>
+                <option value="3">Recorrido en Postorden (Postorder)</option>
+            </select>
+        </div>
+        <div><textarea class="show-order" disabled="disabled" placeholder="Datos del Recorrido"></textarea></div>
+    </div>
+
+    <div class="link-type">
+        Flecha:
+        <label>Codo<input class="elbow" type="radio" checked></label>
+        <label>Línea Recta<input class="line" type="radio"></label>
+    </div>
+
+    <div class="bst-input">
+        <div>
+            <input type="text" class="max-count" placeholder="Cantidad Máxima Aleatoria">
+            <input type="text" class="max-value" placeholder="Valor Máximo Aleatorio">
+            <input class="random" type="button" value="Aleatorio">
+        </div>
+        <div>
+            <textarea class="data" placeholder="Ingrese números enteros, separe los datos con comas o espacios&#10;[Cantidad Máxima Aleatoria] predeterminada [20]&#10;[Valor Máximo Aleatorio] predeterminado [100]"></textarea>
+        </div>
+        <div>
+            <input class="add" type="button" value="Agregar">
+            <input class="remove" type="button" value="Eliminar">
+            <input class="clear" type="button" value="Limpiar">
+        </div>
+    </div>
+</div>
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/lodash.min.js"></script>
+<script src="js/lib/backbone.min.js"></script>
+<script src="js/lib/joint.min.js"></script>
+<script src="js/lib/ext.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/tree/BinaryTree.js"></script>
+<script src="js/tree/BST.js"></script>
+<script src="js/tree/BBST.js"></script>
+<script src="js/tree/AVLTree.js"></script>
+<script src="js/tree/RAVLTree.js"></script>
+<script src="js/graph.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
